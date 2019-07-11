@@ -2,9 +2,9 @@
 
 @include mat-core();
 
-$tema-color-primario:   mat-palette($mat-amber,100);
+$tema-color-primario:   mat-palette($mat-amber);
 $tema-color-secundario: mat-palette($mat-deep-orange);
-$tema-app:   mat-light-theme($tema-color-primario, $tema-color-secundario);
+$tema-app:   mat-dark-theme($tema-color-primario, $tema-color-secundario);
 @include mat-core-theme($tema-app);
 @include mat-button-theme($tema-app);
 @include mat-checkbox-theme($tema-app);
