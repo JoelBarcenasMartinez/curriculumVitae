@@ -1,0 +1,11 @@
+@import '../node_modules/@angular/material/theming';
+
+@include mat-core();
+
+$tema-color-primario:   mat-palette($mat-amber,100);
+$tema-color-secundario: mat-palette($mat-deep-orange);
+$tema-app:   mat-light-theme($tema-color-primario, $tema-color-secundario);
+@include mat-core-theme($tema-app);
+@include mat-button-theme($tema-app);
+@include mat-checkbox-theme($tema-app);
+@include angular-material-theme($tema-app);
